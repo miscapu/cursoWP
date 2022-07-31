@@ -1,13 +1,15 @@
 <!doctype html>
-<html lang="en">
+<!-- Add attributes language -->
+<html <?php language_attributes();?>>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo( 'charset' );?>">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Course WP</title>
+    <!-- Remove title -->
+<!--    <title>Course WP</title>-->
 </head>
-<body>
+<body <?php body_class();?>>
 
 	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -15,6 +17,53 @@
 		It has survived not only five centuries, but also the leap into electronic typesetting,
 		remaining essentially unchanged.
 	</p>
+
+    <div id="page" class="site">
+        <!-- Header -->
+        <header>
+            <section class="top-bar">
+                <div class="logo">
+                    Logo
+                </div>
+                <div class="searchbox">
+                    Form Search
+                </div>
+            </section>
+            <section class="menu-area">
+                <nav class="main-menu">
+                    Menu Nav
+                </nav>
+            </section>
+        </header>
+        <!-- End Header -->
+
+        <!-- Content -->
+        <div id="content" class="site-content">
+            <div class="primary" id="content-area">
+                <main id="main" class="site-main">
+                    <section class="hero">
+                        Hero
+                    </section>
+                    <section class="services">
+                        Services
+                    </section>
+                    <section class="home-blog">
+                        Blog
+                    </section>
+                </main>
+            </div>
+        </div>
+        <!-- End Content -->
+
+        <!-- Add footer -->
+            <footer class="site-footer">
+                Footer
+            </footer>
+        <!-- End Footer -->
+
+    </div>
+
+
 
 </body>
 </html>
