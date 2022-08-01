@@ -8,6 +8,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!-- Remove title -->
 	<!--    <title>Course WP</title>-->
+    <!-- Add functions to functions.php file into header.php file -->
+    <?php wp_head(); ?>
 </head>
 <body <?php body_class();?>>
 
