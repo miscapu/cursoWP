@@ -6,7 +6,7 @@
 
 </div>
 
-
-
+<!-- Add wp_footer function -->
+<?php wp_footer();?>
 </body>
 </html>
