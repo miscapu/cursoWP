@@ -13,3 +13,14 @@ function miscapu_load_scripts()
     wp_enqueue_script( 'dropdown', get_template_directory_uri().'/js/dropdown.js', array(), '1.0', true  );
 }
 add_action( 'wp_enqueue_scripts', 'miscapu_load_scripts' );
+
+/**
+ * Register menu in our theme
+ * key=>value
+ */
+register_nav_menus(
+    array(
+        'miscapu_main_menu'     =>  'Main Menu',
+        'miscapu_footer_menu'   =>  'Footer Menu',
+    )
+);
