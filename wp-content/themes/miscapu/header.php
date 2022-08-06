@@ -13,28 +13,32 @@
 </head>
 <body <?php body_class();?>>
 
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-	Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-	when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-	It has survived not only five centuries, but also the leap into electronic typesetting,
-	remaining essentially unchanged.
-</p>
-
 <div id="page" class="site">
 	<!-- Header -->
 	<header>
+
 		<section class="top-bar">
-			<div class="logo">
-				Logo
-			</div>
-			<div class="searchbox">
-				Form Search
-			</div>
+            <div class="container">
+                <div class="logo">
+                    Logo
+                </div>
+                <div class="searchbox">
+                    Form Search
+                </div>
+            </div>
 		</section>
+
 		<section class="menu-area">
-			<nav class="main-menu">
-				Menu Nav
-			</nav>
+            <div class="container">
+                <nav class="main-menu">
+                    <!-- Here will be our menu using wp_nav_menu that receive array key->value -->
+                        <?php wp_nav_menu( array(
+                                'theme_location'    =>  'miscapu_main_menu',
+                                'depth'             =>  2,
+                        ) )?>
+                    <!-- End Menu -->
+                </nav>
+            </div>
 		</section>
 	</header>
 	<!-- End Header -->
