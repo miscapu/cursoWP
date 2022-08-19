@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+    <!-- Add custom header WP -->
+    <img src="<?php header_image(); ?>" height="<?= get_custom_header()->height; ?>" width="<?= get_custom_header()->width; ?>" alt="">
+    <!-- Custom Header WP End -->
     <div id="content" class="site-content">
         <div id="primary" class="content-area">
             <main id="main" class="site-main">
