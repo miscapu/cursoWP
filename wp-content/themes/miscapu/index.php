@@ -14,6 +14,16 @@
 					            ?>
                                 <article>
                                     <h2><?php the_title(); ?></h2>
+
+                                    <!-- Add Post Featured Image ( from metabox sidebar admin WP )
+                                    ==========
+                                    params options thumb/medium/large or array(225,225)
+                                    class: wp-post-image
+                                    =========
+                                    -->
+                                    <?php the_post_thumbnail( 'thumb' );?>
+                                    <!-- Featured Image End -->
+
                                     <div class="meta-info">
                                         <p>Posted in <?php echo get_the_date(); ?> by <?php the_author_posts_link(); ?></p>
                                         <p>Categories: <?php the_category( ' ' ); ?></p>

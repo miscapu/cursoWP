@@ -46,6 +46,11 @@ function miscapu_wpdev()
 		'width'     =>  1920
 	) );
 
+	/**
+	 * Adding support to thumbnails
+	 */
+	add_theme_support( 'post-thumbnails' );
+
 }
 
 /**
