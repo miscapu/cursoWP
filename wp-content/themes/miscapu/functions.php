@@ -60,12 +60,32 @@ function miscapu_wpdev()
 		'flex-width'    =>  true,
 		'flex-height'   =>  true,
 	) );
-
-
-
 }
 
 /**
  * hook after_setup_theme
  */
 add_action( 'after_setup_theme',  'miscapu_wpdev', 0 );
+
+/**
+ * Creating Sidebars into our theme miscapu
+ * Description: Let's create our function out of miscapu_wp_dev function
+ * for take advantage our widget_init hook
+ */
+function miscapu_add_sidebars()
+{
+	/**
+	 * @function register_sidebar
+	 * @param array
+	 */
+	register_sidebar( array(
+		'name'          =>  'Blog Sidebar',
+		'id'            =>  'sidebar-blog',
+		'description'   =>  'This is the sidebar Blog. You can add your widgets here',
+		'before_widget' =>  '<div class="widget-wrapper">',
+		'after_widget'  =>  '</div>',
+		'before_title'  =>  '<h4 class="widget-title">',
+		'after_title'   =>   '</h4>',
+	) );
+}
+add_action( 'widgets_init', 'miscapu_add_sidebars' );
