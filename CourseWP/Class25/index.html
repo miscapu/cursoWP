@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Using Theme Support in WordPress</title>
+</head>
+<body>
+
+    <h1>Use Theme Support of WordPress</h1>
+        <p>
+            Add support to WordPress to our Template Site
+        </p>
+        <p>
+            For this let's create function miscapu_dev for organize code
+        </p>
+        <p>
+            For add code, let's open function.php into theme miscapu
+        </p>
+        <p>
+            For more details, visite: <a href="https://developer.wordpress.org/reference/functions/add_theme_support/">Theme Support</a>
+        </p>
+        <p>
+            In this tutorial let's use theme_support for custom header and let's add function miscapu_wpDev
+        </p>
+        <p>
+            After, we need inform to WP, what pages must have custom header with code, after <?php get_header(); ?>
+        </p>
+        <pre>
+            Add into code in index.php page.php and general-template.php our custom header:
+            <img src="<?php header_image(); ?>" height="<?= get_custom_header()->height;?>" width="<?= get_custom_header()->width; ?>" alt="">
+        </pre>
+</body>
+</html>
