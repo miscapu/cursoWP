@@ -20,7 +20,17 @@
 		<section class="top-bar">
             <div class="container">
                 <div class="logo">
-                    Logo
+                    <!-- Add Logo -->
+                        <?php
+                        if ( has_custom_logo() ):
+                            the_custom_logo();
+                            else:
+                            ?>
+                                <a href="<?= home_url('/');?>"><span><?php bloginfo( 'name' );?></span></a>
+                    <?php
+                        endif;
+                        ?>
+                    <!--End Logo -->
                 </div>
                 <div class="searchbox">
                     Form Search

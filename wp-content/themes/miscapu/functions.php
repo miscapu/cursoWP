@@ -50,6 +50,18 @@ function miscapu_wpdev()
 	 * Adding support to thumbnails
 	 */
 	add_theme_support( 'post-thumbnails' );
+	/**
+	 * Add Logo in our theme
+	 * Allow enable used to logo customized in our theme
+	 */
+	add_theme_support( 'custom-logo', array(
+		'width'         =>  200,
+		'height'        =>  110,
+		'flex-width'    =>  true,
+		'flex-height'   =>  true,
+	) );
+
+
 
 }
 
