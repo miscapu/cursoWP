@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Logo in our theme WordPress</title>
+</head>
+<body>
+
+    <h1>Create Logo in our theme WordPress</h1>
+        <p>
+            For create our logo in our theme miscapu, we need open functions.php file and
+            add function add_theme_support( 'custom-logo' ); than Allow enable used to logo customized in our theme
+        </p>
+        <p>
+            This function allow arguments as width and height than add into array
+        </p>
+        <p>
+            For add into our theme, we need enter to header.php file.
+        </p>
+        <p>
+            In case than dont have image for logo, we cam show title to site with an conditional
+            if (has_custom_logo){
+            the_custom_logo()
+            }else {
+            <a href="<?= home_url('/'); ?>"><span><?php bloginfo( 'name' );?></span></a>
+            }
+        </p>
+</body>
+</html>
