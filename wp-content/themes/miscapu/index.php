@@ -21,7 +21,7 @@
                                     class: wp-post-image
                                     =========
                                     -->
-                                    <?php the_post_thumbnail( 'thumb' );?>
+                                    <?php the_post_thumbnail( array( 275, 275 ) );?>
                                     <!-- Featured Image End -->
 
                                     <div class="meta-info">
@@ -37,6 +37,17 @@
                             <p>Nothing yet to be displayed!</p>
 			            <?php endif; ?>
                     </div>
+                    <!--
+                     ======================
+                            SIDEBAR
+                     ======================
+                     -->
+                        <?php get_sidebar(); ?>
+                    <!--
+                     =======================
+                            SIDEBAR
+                     =======================
+                     -->
                 </div>
             </main>
         <!-- Content -->
