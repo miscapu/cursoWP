@@ -20,7 +20,7 @@ O arquivo Page podemos ver uma página Estática
 
 O arquivo index é a porta de entrada para nosso WordPress
 
-A anatoomia de um site em WordPress esta resumida nesta imagem:
+A anatomia de um site em WordPress esta resumida nesta imagem:
 
 https://cdn.tutsplus.com/wp/uploads/legacy/090_WPCheatSheets/WP_CheatSheet_ThemeAnatomy.jpg?_ga=2.128179340.1255046423.1659269067-1433186993.1659269067
 
