@@ -44,11 +44,20 @@ get_header();
 							<?php the_excerpt(); ?>
 						</div>
 					</article>
-
 				<?php
+
+                    /**
+                     * ========================
+                     * Add comments into Post
+                     * =======================
+                     */
+                    if ( comments_open() || get_comments_number() ):
+                        comments_template();
+                        endif;
+
+
 				endwhile;
 			?>
-
 		</div>
 	</div>
 </div>
