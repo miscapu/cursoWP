@@ -13,7 +13,7 @@
 				            while( have_posts() ) : the_post();
 					            ?>
                                 <article>
-                                    <h2><?php the_title(); ?></h2>
+                                    <h2><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h2>
 
                                     <!-- Add Post Featured Image ( from metabox sidebar admin WP )
                                     ==========
@@ -21,7 +21,7 @@
                                     class: wp-post-image
                                     =========
                                     -->
-                                    <?php the_post_thumbnail( array( 275, 275 ) );?>
+                                    <a href="<?php the_permalink();?>"><?php the_post_thumbnail( array( 275, 275 ) );?></a>
                                     <!-- Featured Image End -->
 
                                     <div class="meta-info">
@@ -29,7 +29,7 @@
                                         <p>Categories: <?php the_category( ' ' ); ?></p>
                                         <p>Tags: <?php the_tags( '', ', '); ?></p>
                                     </div>
-						            <?php the_content(); ?>
+						            <?php the_excerpt(); ?>
                                 </article>
 				            <?php
 				            endwhile;
